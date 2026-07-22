@@ -3,12 +3,14 @@
 import { motion } from "motion/react";
 import GlitchText from "@/components/effects/GlitchText";
 import ParticleBackground from "@/components/effects/ParticleBackground";
+import GeometricHero from "@/components/effects/GeometricHero";
 import { ArrowDown } from "@phosphor-icons/react";
 
 export default function Hero() {
   return (
     <section className="relative min-h-dvh flex items-center justify-center overflow-hidden">
       <ParticleBackground />
+      <GeometricHero />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <motion.div

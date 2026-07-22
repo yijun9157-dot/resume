@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import SonarRings from "@/components/effects/SonarRings";
 import HoloDivider from "@/components/effects/HoloDivider";
+import NeuralNetwork from "@/components/effects/NeuralNetwork";
 
 const highlights = [
   { label: "年龄", value: "23" },
@@ -17,6 +18,7 @@ export default function About() {
       <SonarRings />
 
       <div className="relative z-10 max-w-4xl mx-auto">
+        <NeuralNetwork />
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +55,7 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          温州商学院数据科学与大数据技术专业在读，浙江工业职业学院大数据技术专科背景。
+          温州商学院数据科学与大数据技术专业在读。
           热爱AI应用开发，从LangGraph智能体到全栈系统架构，追求用AI重新定义软件的可能性。
         </motion.p>
       </div>

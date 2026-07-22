@@ -94,10 +94,7 @@ export default function Contact() {
               onClick={(e) => e.stopPropagation()}
             >
               <p className="text-gold-light text-lg font-bold mb-4">微信扫码联系</p>
-              <div className="w-72 h-72 border border-border rounded-2xl flex items-center justify-center text-text-muted text-sm">
-                [二维码]
-              </div>
-              <p className="text-text-muted text-xs mt-3">请将微信二维码放在 public/qrcode.jpg</p>
+              <img src="./qrcode.jpg" alt="微信二维码" className="w-72 h-72 object-contain rounded-2xl" />
             </motion.div>
           </motion.div>
         )}
